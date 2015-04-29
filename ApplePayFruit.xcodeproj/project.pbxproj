@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7795160C1AEF54BA00E4E3EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795160B1AEF54BA00E4E3EB /* AppDelegate.swift */; };
+		779516111AEF54BA00E4E3EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7795160F1AEF54BA00E4E3EB /* Main.storyboard */; };
+		779516131AEF54BA00E4E3EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779516121AEF54BA00E4E3EB /* Images.xcassets */; };
+		779516161AEF54BA00E4E3EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 779516141AEF54BA00E4E3EB /* LaunchScreen.xib */; };
+		779516221AEF54BA00E4E3EB /* ApplePayFruitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779516211AEF54BA00E4E3EB /* ApplePayFruitTests.swift */; };
+		7795162C1AEF54F000E4E3EB /* FruitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795162B1AEF54F000E4E3EB /* FruitListViewController.swift */; };
+		7795162E1AEF551C00E4E3EB /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795162D1AEF551C00E4E3EB /* Fruit.swift */; };
+		779516301AEF559200E4E3EB /* BuyFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795162F1AEF559200E4E3EB /* BuyFruitViewController.swift */; };
+		779516321AEF565800E4E3EB /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779516311AEF565800E4E3EB /* FruitCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7795161C1AEF54BA00E4E3EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779515FE1AEF54B900E4E3EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 779516051AEF54BA00E4E3EB;
+			remoteInfo = ApplePayFruit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		777E43951AEFFABE00074116 /* ApplePayFruit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplePayFruit.entitlements; sourceTree = "<group>"; };
+		779516061AEF54BA00E4E3EB /* ApplePayFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePayFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7795160A1AEF54BA00E4E3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7795160B1AEF54BA00E4E3EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		779516101AEF54BA00E4E3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		779516121AEF54BA00E4E3EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		779516151AEF54BA00E4E3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7795161B1AEF54BA00E4E3EB /* ApplePayFruitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePayFruitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		779516201AEF54BA00E4E3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779516211AEF54BA00E4E3EB /* ApplePayFruitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayFruitTests.swift; sourceTree = "<group>"; };
+		7795162B1AEF54F000E4E3EB /* FruitListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitListViewController.swift; sourceTree = "<group>"; };
+		7795162D1AEF551C00E4E3EB /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		7795162F1AEF559200E4E3EB /* BuyFruitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyFruitViewController.swift; sourceTree = "<group>"; };
+		779516311AEF565800E4E3EB /* FruitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		779516031AEF54BA00E4E3EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779516181AEF54BA00E4E3EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		779515FD1AEF54B900E4E3EB = {
+			isa = PBXGroup;
+			children = (
+				779516081AEF54BA00E4E3EB /* ApplePayFruit */,
+				7795161E1AEF54BA00E4E3EB /* ApplePayFruitTests */,
+				779516071AEF54BA00E4E3EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		779516071AEF54BA00E4E3EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				779516061AEF54BA00E4E3EB /* ApplePayFruit.app */,
+				7795161B1AEF54BA00E4E3EB /* ApplePayFruitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		779516081AEF54BA00E4E3EB /* ApplePayFruit */ = {
+			isa = PBXGroup;
+			children = (
+				777E43951AEFFABE00074116 /* ApplePayFruit.entitlements */,
+				7795160B1AEF54BA00E4E3EB /* AppDelegate.swift */,
+				7795160F1AEF54BA00E4E3EB /* Main.storyboard */,
+				779516121AEF54BA00E4E3EB /* Images.xcassets */,
+				779516141AEF54BA00E4E3EB /* LaunchScreen.xib */,
+				779516091AEF54BA00E4E3EB /* Supporting Files */,
+				7795162D1AEF551C00E4E3EB /* Fruit.swift */,
+				779516311AEF565800E4E3EB /* FruitCell.swift */,
+				7795162B1AEF54F000E4E3EB /* FruitListViewController.swift */,
+				7795162F1AEF559200E4E3EB /* BuyFruitViewController.swift */,
+			);
+			path = ApplePayFruit;
+			sourceTree = "<group>";
+		};
+		779516091AEF54BA00E4E3EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7795160A1AEF54BA00E4E3EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7795161E1AEF54BA00E4E3EB /* ApplePayFruitTests */ = {
+			isa = PBXGroup;
+			children = (
+				779516211AEF54BA00E4E3EB /* ApplePayFruitTests.swift */,
+				7795161F1AEF54BA00E4E3EB /* Supporting Files */,
+			);
+			path = ApplePayFruitTests;
+			sourceTree = "<group>";
+		};
+		7795161F1AEF54BA00E4E3EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				779516201AEF54BA00E4E3EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		779516051AEF54BA00E4E3EB /* ApplePayFruit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779516251AEF54BA00E4E3EB /* Build configuration list for PBXNativeTarget "ApplePayFruit" */;
+			buildPhases = (
+				779516021AEF54BA00E4E3EB /* Sources */,
+				779516031AEF54BA00E4E3EB /* Frameworks */,
+				779516041AEF54BA00E4E3EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplePayFruit;
+			productName = ApplePayFruit;
+			productReference = 779516061AEF54BA00E4E3EB /* ApplePayFruit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7795161A1AEF54BA00E4E3EB /* ApplePayFruitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779516281AEF54BA00E4E3EB /* Build configuration list for PBXNativeTarget "ApplePayFruitTests" */;
+			buildPhases = (
+				779516171AEF54BA00E4E3EB /* Sources */,
+				779516181AEF54BA00E4E3EB /* Frameworks */,
+				779516191AEF54BA00E4E3EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7795161D1AEF54BA00E4E3EB /* PBXTargetDependency */,
+			);
+			name = ApplePayFruitTests;
+			productName = ApplePayFruitTests;
+			productReference = 7795161B1AEF54BA00E4E3EB /* ApplePayFruitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		779515FE1AEF54B900E4E3EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Inoue, Mayuko";
+				TargetAttributes = {
+					779516051AEF54BA00E4E3EB = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 7WAJL23XEW;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
+					};
+					7795161A1AEF54BA00E4E3EB = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 779516051AEF54BA00E4E3EB;
+					};
+				};
+			};
+			buildConfigurationList = 779516011AEF54B900E4E3EB /* Build configuration list for PBXProject "ApplePayFruit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 779515FD1AEF54B900E4E3EB;
+			productRefGroup = 779516071AEF54BA00E4E3EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				779516051AEF54BA00E4E3EB /* ApplePayFruit */,
+				7795161A1AEF54BA00E4E3EB /* ApplePayFruitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		779516041AEF54BA00E4E3EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779516111AEF54BA00E4E3EB /* Main.storyboard in Resources */,
+				779516161AEF54BA00E4E3EB /* LaunchScreen.xib in Resources */,
+				779516131AEF54BA00E4E3EB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779516191AEF54BA00E4E3EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		779516021AEF54BA00E4E3EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7795162E1AEF551C00E4E3EB /* Fruit.swift in Sources */,
+				779516301AEF559200E4E3EB /* BuyFruitViewController.swift in Sources */,
+				7795160C1AEF54BA00E4E3EB /* AppDelegate.swift in Sources */,
+				779516321AEF565800E4E3EB /* FruitCell.swift in Sources */,
+				7795162C1AEF54F000E4E3EB /* FruitListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779516171AEF54BA00E4E3EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779516221AEF54BA00E4E3EB /* ApplePayFruitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7795161D1AEF54BA00E4E3EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 779516051AEF54BA00E4E3EB /* ApplePayFruit */;
+			targetProxy = 7795161C1AEF54BA00E4E3EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7795160F1AEF54BA00E4E3EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779516101AEF54BA00E4E3EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		779516141AEF54BA00E4E3EB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779516151AEF54BA00E4E3EB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		779516231AEF54BA00E4E3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		779516241AEF54BA00E4E3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		779516261AEF54BA00E4E3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplePayFruit/ApplePayFruit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ApplePayFruit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		779516271AEF54BA00E4E3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplePayFruit/ApplePayFruit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ApplePayFruit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		779516291AEF54BA00E4E3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ApplePayFruitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApplePayFruit.app/ApplePayFruit";
+			};
+			name = Debug;
+		};
+		7795162A1AEF54BA00E4E3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ApplePayFruitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApplePayFruit.app/ApplePayFruit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		779516011AEF54B900E4E3EB /* Build configuration list for PBXProject "ApplePayFruit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779516231AEF54BA00E4E3EB /* Debug */,
+				779516241AEF54BA00E4E3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779516251AEF54BA00E4E3EB /* Build configuration list for PBXNativeTarget "ApplePayFruit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779516261AEF54BA00E4E3EB /* Debug */,
+				779516271AEF54BA00E4E3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779516281AEF54BA00E4E3EB /* Build configuration list for PBXNativeTarget "ApplePayFruitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779516291AEF54BA00E4E3EB /* Debug */,
+				7795162A1AEF54BA00E4E3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 779515FE1AEF54B900E4E3EB /* Project object */;
+}

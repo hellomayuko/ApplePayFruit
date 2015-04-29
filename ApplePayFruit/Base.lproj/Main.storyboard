@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wkF-m3-HYA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="6gC-W0-mWP">
+            <objects>
+                <navigationController title="Master" id="wkF-m3-HYA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ihf-vI-yvP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1TP-i9-f62" kind="relationship" relationship="rootViewController" id="kpN-nO-Ebq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wew-hD-05w" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="64"/>
+        </scene>
+        <!--Fruit List-->
+        <scene sceneID="vXT-ZC-rC6">
+            <objects>
+                <tableViewController title="Fruit List" id="1TP-i9-f62" customClass="FruitListViewController" customModule="ApplePayFruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="133" sectionHeaderHeight="22" sectionFooterHeight="22" id="muR-Mb-lgB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="100" id="FJU-q9-GJ7" customClass="FruitCell" customModule="ApplePayFruit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FJU-q9-GJ7" id="HoT-K4-zlp">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uq8-iP-4cw">
+                                            <rect key="frame" x="8" y="8" width="83" height="83"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Uq8-iP-4cw" secondAttribute="height" multiplier="1:1" id="YUp-yy-axj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTU-7j-kcs">
+                                            <rect key="frame" x="107" y="9" width="66" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBo-ef-mhp">
+                                            <rect key="frame" x="107" y="70" width="43" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.97539487089999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Uq8-iP-4cw" firstAttribute="bottom" secondItem="nBo-ef-mhp" secondAttribute="bottom" id="0ey-Cb-7L5"/>
+                                        <constraint firstItem="nTU-7j-kcs" firstAttribute="leading" secondItem="Uq8-iP-4cw" secondAttribute="trailing" constant="16" id="2dK-Sl-1dz"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="nTU-7j-kcs" secondAttribute="trailing" id="6Ax-GF-Eet"/>
+                                        <constraint firstItem="Uq8-iP-4cw" firstAttribute="leading" secondItem="HoT-K4-zlp" secondAttribute="leadingMargin" id="Cv8-GJ-tv4"/>
+                                        <constraint firstItem="nBo-ef-mhp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nTU-7j-kcs" secondAttribute="bottom" constant="5" id="GHI-e7-CCQ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Uq8-iP-4cw" secondAttribute="bottom" id="Tsd-Jh-ifu"/>
+                                        <constraint firstItem="nTU-7j-kcs" firstAttribute="leading" secondItem="nBo-ef-mhp" secondAttribute="leading" id="Uhf-3l-W4y"/>
+                                        <constraint firstItem="nTU-7j-kcs" firstAttribute="top" secondItem="Uq8-iP-4cw" secondAttribute="top" constant="1" id="ayU-ql-baJ"/>
+                                        <constraint firstItem="Uq8-iP-4cw" firstAttribute="top" secondItem="HoT-K4-zlp" secondAttribute="topMargin" id="dZa-U2-cD5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="fruitImage" destination="Uq8-iP-4cw" id="QCM-dT-qnx"/>
+                                    <outlet property="priceLabel" destination="nBo-ef-mhp" id="9jf-EY-7k5"/>
+                                    <outlet property="titleLabel" destination="nTU-7j-kcs" id="pzA-Dn-fnu"/>
+                                    <segue destination="W98-vV-kGE" kind="show" identifier="showDetail" id="w5N-Eg-WM8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="1TP-i9-f62" id="JOc-pu-fxO"/>
+                            <outlet property="delegate" destination="1TP-i9-f62" id="3aU-3A-YNm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Fruits" id="hHw-sZ-aud"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJL-oy-cly" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="64"/>
+        </scene>
+        <!--Buy Fruit-->
+        <scene sceneID="Nt9-or-9Jk">
+            <objects>
+                <viewController title="Buy Fruit" id="W98-vV-kGE" customClass="BuyFruitViewController" customModule="ApplePayFruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rb3-bz-wQ4"/>
+                        <viewControllerLayoutGuide type="bottom" id="QCu-pH-cch"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bIZ-es-taM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EF1-yA-VT9">
+                                <rect key="frame" x="124" y="528" width="354" height="64"/>
+                                <state key="normal" image="ApplePayFruitButton">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchase:" destination="W98-vV-kGE" eventType="touchUpInside" id="zPV-VE-jK7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Cj-PA-DDf">
+                                <rect key="frame" x="10" y="87" width="580" height="305"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="305" id="7CZ-A0-4ho"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKp-ss-dGy">
+                                <rect key="frame" x="10" y="406" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$2.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQ8-nc-cTQ">
+                                <rect key="frame" x="271" y="452" width="59" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.97539487089999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Cj-PA-DDf" firstAttribute="width" secondItem="bIZ-es-taM" secondAttribute="width" constant="-20" id="2At-6S-yuj"/>
+                            <constraint firstAttribute="centerX" secondItem="EF1-yA-VT9" secondAttribute="centerX" constant="-0.5" id="ALh-la-gw6"/>
+                            <constraint firstItem="SKp-ss-dGy" firstAttribute="width" relation="lessThanOrEqual" secondItem="7Cj-PA-DDf" secondAttribute="width" id="FP3-FN-cBr"/>
+                            <constraint firstItem="QCu-pH-cch" firstAttribute="top" secondItem="EF1-yA-VT9" secondAttribute="bottom" constant="8" id="RrD-Lw-d0M"/>
+                            <constraint firstItem="SKp-ss-dGy" firstAttribute="top" secondItem="7Cj-PA-DDf" secondAttribute="bottom" constant="14" id="Wuw-9a-2dd"/>
+                            <constraint firstItem="QCu-pH-cch" firstAttribute="top" secondItem="EF1-yA-VT9" secondAttribute="bottom" id="Ygr-zA-wpu"/>
+                            <constraint firstItem="TQ8-nc-cTQ" firstAttribute="top" secondItem="SKp-ss-dGy" secondAttribute="bottom" constant="26" id="Yys-EU-hre"/>
+                            <constraint firstAttribute="centerX" secondItem="TQ8-nc-cTQ" secondAttribute="centerX" id="p4X-AI-0ny"/>
+                            <constraint firstAttribute="centerX" secondItem="7Cj-PA-DDf" secondAttribute="centerX" id="sml-q3-23h"/>
+                            <constraint firstItem="7Cj-PA-DDf" firstAttribute="top" secondItem="Rb3-bz-wQ4" secondAttribute="bottom" constant="23" id="t3P-ra-8po"/>
+                            <constraint firstItem="SKp-ss-dGy" firstAttribute="leading" secondItem="7Cj-PA-DDf" secondAttribute="leading" id="xbo-JZ-Yn6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ygr-zA-wpu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="Z1f-9M-XLG"/>
+                    <connections>
+                        <outlet property="applePayButton" destination="EF1-yA-VT9" id="FhK-eX-W1z"/>
+                        <outlet property="fruitImage" destination="7Cj-PA-DDf" id="zWN-O5-aHA"/>
+                        <outlet property="fruitPriceLabel" destination="TQ8-nc-cTQ" id="59M-UO-55W"/>
+                        <outlet property="fruitTitleLabel" destination="SKp-ss-dGy" id="njR-E2-vag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLU-0Z-m0c" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1343" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ApplePayFruitButton" width="194" height="64"/>
+    </resources>
+</document>
